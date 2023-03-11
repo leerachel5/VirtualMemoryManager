@@ -16,5 +16,10 @@ int main() {
     std::vector<int> virtualAddrs;
     FileParser::GetVAInput(INPUT_FILE_PATH, virtualAddrs);
 
+    for (int va : virtualAddrs) {
+        std::cout << vm.translateVAToPA(va) << " ";
+    }
+    std::cout << std::endl;
+
     return 0;
 }
