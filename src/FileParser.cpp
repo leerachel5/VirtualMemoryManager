@@ -24,4 +24,17 @@ void FileParser::GetInitContent(std::string initFilePath, std::vector<int>& stCo
     while(ss >> intBuffer) {
         ptContents.push_back(intBuffer);
     }
+
+    initFile.close();
+}
+
+void FileParser::GetVAInput(std::string inputFilePath, std::vector<int>& virtualAddrs) {
+    std::ifstream inputFile(inputFilePath);
+    int buffer;
+
+    while (inputFile >> buffer) {
+        virtualAddrs.push_back(buffer);
+    }
+    
+    inputFile.close();
 }
