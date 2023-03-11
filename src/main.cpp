@@ -4,9 +4,9 @@
 #include <fstream>
 
 
-const std::string INIT_FILE_PATH = "input/init-no-dp.txt";
-const std::string INPUT_FILE_PATH = "input/input-no-dp.txt";
-const std::string OUTPUT_FILE_PATH = "output/output-no-dp.txt";
+const std::string INIT_FILE_PATH = "input/init-dp.txt";
+const std::string INPUT_FILE_PATH = "input/input-dp.txt";
+const std::string OUTPUT_FILE_PATH = "output/output-dp.txt";
 
 
 int main() {
